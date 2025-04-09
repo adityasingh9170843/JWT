@@ -8,7 +8,14 @@
 </head>
 <body>
     <div class="w-full h-screen bg-zinc-900">
-
+        <h1 class="text-4xl font-bold text-white text-center pt-20">Create User</h1>
+        <form action="/create" method="post" class="p-20">
+            <input type="text" name="name" placeholder="Enter your name" class="w-full h-12 bg-zinc-800 text-white px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+            <input type="text" name="email" placeholder="Enter your email" class="w-full h-12 bg-zinc-800 text-white px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 mt-4" required>
+            <input type="password" name="password" placeholder="Enter your password" class="w-full h-12 bg-zinc-800 text-white px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 mt-4" required>
+            <input type="number" name="age" placeholder="Enter your age" class="w-full h-12 bg-zinc-800 text-white px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 mt-4" required>
+            <input type="submit" value="Submit" class="w-full h-12 bg-blue-500 text-white rounded-md mt-4 cursor-pointer hover:bg-blue-600 transition duration-200">
+        </form>
     </div>
 </body>
 </html>
